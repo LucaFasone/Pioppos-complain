@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap');
+.MainContainer{
+    @apply grid place-items-center
+}
+
+.MainText{
+   font-family: 'Oswald';
+   @apply text-3xl my-3 tracking-wider
+    
+}
+.SubmitButton{
+    @apply block bg-gray-200 rounded-md border-2 
+}
+.TextArea{
+    font-size: x-large;
+    @apply border-black border-2
+}
