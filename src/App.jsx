@@ -9,7 +9,6 @@ import Style from './App.module.css'
       <textarea className={Style.TextArea} name="TextArea" cols="23" rows="8"></textarea>
       <button className={Style.SubmitButton}>Invia feedback al lattugo</button>
     </div>
-
   )
 }
 

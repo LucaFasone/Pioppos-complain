@@ -5,11 +5,12 @@
 
 .MainText{
    font-family: 'Oswald';
-   @apply text-3xl my-3 tracking-wider
+   letter-spacing: 4px;
+   @apply text-3xl my-3 
     
 }
 .SubmitButton{
-    @apply block bg-gray-200 rounded-md border-2 
+    @apply block bg-gray-200 rounded-md border-2 my-2 w-full 
 }
 .TextArea{
     font-size: x-large;
