@@ -1,5 +1,6 @@
 import React from 'react'
 import Style from './App.module.css'
+import ListBox from './Components/ListBox'
   function App() {
   return (
     <div className={Style.MainContainer}>
@@ -8,6 +9,7 @@ import Style from './App.module.css'
       </h1>
       <textarea className={Style.TextArea} name="TextArea" cols="23" rows="8"></textarea>
       <button className={Style.SubmitButton}>Invia feedback al lattugo</button>
+      <ListBox/>
     </div>
   )
 }
