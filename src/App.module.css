@@ -10,7 +10,7 @@
     
 }
 .SubmitButton{
-    @apply block bg-gray-200 rounded-md border-2 my-2 w-full 
+    @apply block bg-gray-200 rounded-md border-2 my-2  w-full sm:w-72 shadow-sm
 }
 .TextArea{
     font-size: x-large;
