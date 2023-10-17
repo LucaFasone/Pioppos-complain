@@ -1,5 +1,6 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { Listbox } from '@headlessui/react'
+import List from './List'
 import Style from './CompoentesStyles.module.css'
 
 function ListBox() {
@@ -9,6 +10,9 @@ const options = [
   { id: 3, name: 'Vota il tuo lattugo solo ogni 24 ore '},
 ]
   const [selectedOption, setSelectedOption] = useState(options[0])
+  useEffect(() =>{
+    console.log(selectedOption.id);
+  },[selectedOption])
 
   return (
     <div className="mt-4 w-full sm:w-72">
@@ -29,6 +33,7 @@ const options = [
         ))}
       </Listbox.Options>
     </Listbox>
+    <List/>
   </div>
     
   )
