@@ -2,7 +2,7 @@ import React from 'react'
 import { SeeAllComplaints } from '../firebase/Database.js'
 
 function List() {
-    SeeAllComplaints()
+  SeeAllComplaints()
   return (
     <div>List</div>
   )
