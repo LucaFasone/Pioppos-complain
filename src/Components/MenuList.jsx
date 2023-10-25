@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import { Menu } from '@headlessui/react'
-import { render } from 'react-dom'
 import List from './List'
 import Rate from './Rate'
 

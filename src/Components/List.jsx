@@ -1,10 +1,23 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { SeeAllComplaints } from '../firebase/Database.js'
 
-function List() {
-  SeeAllComplaints()
+function List() { 
+  const [complaints, setComplaints] = useState([]);
+  useEffect(() => {
+    SeeAllComplaints((data) => {
+      setComplaints(data);
+    });
+  }, []);
+
+ console.log(complaints);
   return (
-    <div>List</div>
+    <div>
+      {complaints.map((complaint, key) => {
+        return (
+          <div key={key}>{complaint.complain}</div>
+        )
+      })}
+    </div>
   )
 }
 

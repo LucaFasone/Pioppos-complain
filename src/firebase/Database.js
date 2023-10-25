@@ -1,5 +1,5 @@
 import { app } from "./index.js";
-import { getDatabase, set, ref, get, child,} from "firebase/database";
+import { getDatabase, set, ref, onValue,} from "firebase/database";
 
 const db = getDatabase(app);
 
@@ -10,14 +10,16 @@ export const AddConmplainToDatabase = (Complain) =>{
     })    
 }
 
-export const SeeAllComplaints = () => {
-  get(child(ref(db), `complain`)).then((snapshot) => {
-    if (snapshot.exists()) {
-      console.log(snapshot.val());
-    } else {
-      console.log("No data available");
-    }
-  }).catch((error) => {
-    console.error(error);
+
+export const SeeAllComplaints = (callback) => {
+  const dbRef = ref(db, "complain");
+  onValue(dbRef, (snapshot) => {
+    let arr = [];
+    snapshot.forEach((snapshotChild) => {
+      let data = snapshotChild.val();
+      arr.push(data);
+    });
+    console.log(arr);
+    callback(arr);
   });
-}
+};
