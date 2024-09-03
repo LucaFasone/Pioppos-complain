@@ -7,7 +7,7 @@ This is a simple app I created for my girlfriend, allowing her to send me emails
 
 - **Email Sending:** Users can send emails using a custom form.
 - **Rating System:** Users can rate using a predefined rating system.
-- **Firebase Integration:** Firebase is used for deployment and as the database.
+- **Firebase Integration:** Firebase is used for deployment and database.
 - **EmailJS Integration:** EmailJS is used to handle the email-sending functionality.
 
 ## Technologies Used
@@ -15,3 +15,5 @@ This is a simple app I created for my girlfriend, allowing her to send me emails
 - **Frontend:** HTML, CSS, JavaScript
 - **Backend:** Firebase (Database & Hosting)
 - **Email Service:** EmailJS
+
+
